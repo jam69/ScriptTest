@@ -1,0 +1,18 @@
+
+// -------------- una prueba ------------
+
+doIt = function(){
+var product = v.productId;
+var ref = compInfo.sellsAmount(product);
+v.reference2=ref;
+var num = kmInfo.kilometers(v.agencyId);
+v.numerator2=num;
+var den = kmInfo.totalKilometers();
+v.denominator2=den;
+var ventas=v.sellsAmount;
+if(!ventas) ventas=0;
+if(!num) num=0;
+v.balance=ventas - ref * num / den;
+v.balance=1;
+//log.info("-->"+v.productId+"-"+v.agencyId);
+}
